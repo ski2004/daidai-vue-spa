@@ -10,10 +10,12 @@ WORKDIR /usr/src/app
 
 # RUN npm install -g @vue/cli
 RUN npm install
+Run npm rebuild node-sass
+RUN npm run build
 # If you are building your code for production
 # RUN npm ci --only=production
 # Bundle app source
 # COPY . .
 
-EXPOSE 3006
+EXPOSE 80
 CMD [ "node", "server.js" ]
