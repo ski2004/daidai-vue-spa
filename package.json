@@ -4,10 +4,11 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "start": "node server.js",
     "build": "vue-cli-service build",
+    "start": "node server.js",
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e",
+    "postinstall": "npm run build ",
     "heroku-postbuild": "webpack --mode production"
   },
   "dependencies": {

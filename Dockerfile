@@ -16,6 +16,8 @@ RUN npm run build
 # RUN npm ci --only=production
 # Bundle app source
 # COPY . .
+RUN pwd 
 
-EXPOSE 80
+
+EXPOSE 3006
 CMD [ "node", "server.js" ]
